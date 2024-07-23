@@ -6,7 +6,7 @@ interface ProjectsBlockProps {
 
 export default function ProjectsBlock({title, description, img}: ProjectsBlockProps) {
     return(
-        <div className={'w-[500px] h-[550px] rounded-[20px] bg-[#1C1C22] text-white'}>
+        <div className={'w-[700px] h-[650px] rounded-[20px] bg-[#1C1C22] text-white'}>
             <div>
                 <img src={img} alt={'Screenshot'} className={'rounded-t-[20px]'}/>
             </div>

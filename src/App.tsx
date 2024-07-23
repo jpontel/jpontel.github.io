@@ -1,8 +1,9 @@
-import './App.css'
 import Navbar from "./components/navbar";
-import Home from "./pages/home";
 import Services from "./pages/services";
 import Projects from "./pages/projects";
+import AboutMe from "./pages/about-me";
+import Home from "./pages/home";
+import './App.css'
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Home/>
             <Services/>
             <Projects />
+            <AboutMe />
         </div>
     )
 }

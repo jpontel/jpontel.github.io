@@ -1,0 +1,7 @@
+.straight-line {
+    display: inline-block;
+    width: 25%; /* Adjust based on the desired line length */
+    height: 2px; /* Adjust based on the desired line thickness */
+    background-color: white;
+    margin-left: 8px; /* Space between the word and the line */
+}
