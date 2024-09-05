@@ -1,7 +1,19 @@
+@keyframes growBackground {
+    0% {
+        background-size: 0 100%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
 .service-section {
-    transition: background 0.5s ease-in-out;
+    transition: background-size 0.5s ease-in-out;
+    background-size: 0 100%;
+    background: none;
 }
 
 .service-section:hover {
-    background: linear-gradient(90deg, #B16CEA 14.06%, #FF5E69 44.79%, #FF8A56 71.87%, #FFA84B 100%);
+    background: linear-gradient(90deg, #B16CEA 14.06%, #FF5E69 44.79%, #FF8A56 71.87%, #FFA84B 100%) no-repeat;
+    animation: growBackground 0.5s forwards;
 }

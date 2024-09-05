@@ -1,7 +1,7 @@
 import './../../pages/home/style/style.css';
 
 interface AboutMeSectionProps {
-    number: number;
+    number: string;
     description: string;
 }
 

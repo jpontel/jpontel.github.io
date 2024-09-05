@@ -1,0 +1,37 @@
+@keyframes grow {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animation-grow {
+    animation: grow 0.3s ease-out;
+}
+
+.modal {
+    position: relative;
+    background-color: white;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+}
+
+.modal::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -15px;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}

@@ -1,5 +1,7 @@
 import profile from './../../assets/img.png';
 import './style/style.css';
+import GetInTouchButton from "../../components/get-in-touch";
+import ViewAllWorksButton from "../../components/view-all-works";
 
 export default function Home() {
     return (
@@ -15,12 +17,8 @@ export default function Home() {
                 daily lives. Responsive Design, Web and Mobile development
             </p>
             <div className={'inline-flex gap-8 justify-center mt-8 pb-28'}>
-                <button className={'w-[180px] bg-white rounded-full p-4'}>
-                    GET IN TOUCH
-                </button>
-                <button className={'w-[180px] text-white p-4 rounded-full border-white border-4'}>
-                    VIEW ALL WORKS
-                </button>
+                <GetInTouchButton variation={'primary'}/>
+                <ViewAllWorksButton variation={'primary'}/>
             </div>
             <div className={'w-full h-[60px] styled-background'} />
         </div>
