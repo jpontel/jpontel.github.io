@@ -1,4 +1,4 @@
-import ProjectsBlock from "../../components/projects-component";
+import ProjectsBlock from "../../components/projects-block";
 import picture from './../../assets/prisoner.png';
 import './../home/style/style.css';
 

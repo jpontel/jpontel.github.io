@@ -1,6 +1,6 @@
-import ViewAllWorksButton from "../../components/view-all-works";
+import ViewAllWorksButton from "../../components/view-all-works-button";
 import ServiceSection from "../../components/service-section";
-import GetInTouchButton from "../../components/get-in-touch";
+import GetInTouchButton from "../../components/get-in-touch-button";
 import './style/style.css';
 
 export default function Services() {

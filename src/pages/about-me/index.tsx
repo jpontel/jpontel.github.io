@@ -1,5 +1,5 @@
 import AboutMeSection from "../../components/aboutme-section";
-import GetInTouchButton from "../../components/get-in-touch";
+import GetInTouchButton from "../../components/get-in-touch-button";
 
 export default function AboutMe() {
     return (
@@ -22,12 +22,9 @@ export default function AboutMe() {
             </div>
             <div className={'flex flex-col w-full h-full items-center justify-center font-baijamjuree'}>
                 <div className={'flex gap-4 w-full items-center justify-center'}>
-                    <div className={'w-[230px] h-[446px] bg-white rounded-[20px]'}/>
-                    <div className={'w-[374px] h-[446px] bg-white rounded-[20px] '}/>
-                    <div className={'flex flex-col gap-4'}>
-                        <div className={'w-[230px] h-[215px] bg-white rounded-[20px]'}/>
-                        <div className={'w-[230px] h-[215px] bg-white rounded-[20px]'}/>
-                    </div>
+                    <div className={'w-[474px] h-[306px] bg-white rounded-[20px] '}/>
+                    <div className={'w-[474px] h-[306px] bg-white rounded-[20px] '}/>
+                    <div className={'w-[474px] h-[306px] bg-white rounded-[20px] '}/>
                 </div>
                 <div className={'w-full h-full flex items-center justify-center mt-12 font-baijamjuree'}>
                     <div

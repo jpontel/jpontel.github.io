@@ -1,4 +1,4 @@
-import {ButtonProps} from "../get-in-touch";
+import {ButtonProps} from "../get-in-touch-button";
 
 export default function ViewAllWorksButton({variation}: ButtonProps) {
     return (

@@ -7,7 +7,7 @@ export default function Footer() {
                     GUIGO
                 </div>
                 <div className={'w-full h-full text-[13px] text-zinc-400'}>
-                    © Designed by José Rodrigo Pontel
+                    © Made with ❤️‍🔥 by José Rodrigo Pontel
                 </div>
             </div>
             <div className={'w-full h-full items-end gap-6 justify-end text-end flex flex-col'}>

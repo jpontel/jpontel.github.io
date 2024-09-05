@@ -28,10 +28,10 @@
 .modal::before {
     content: '';
     position: absolute;
-    top: 30%;
-    right: -15px;
-    transform: translateY(-50%);
-    border-width: 10px;
+    bottom: 100%;
+    left: 50%;
+    border-width: 0 10px 10px 10px;
     border-style: solid;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent white transparent;
 }
+

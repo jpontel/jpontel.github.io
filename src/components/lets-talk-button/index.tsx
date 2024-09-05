@@ -1,13 +1,9 @@
-import linkedinIcon from './../../assets/linkedin-svgrepo-com.svg';
-import { Fragment, useState, useEffect, useRef } from "react";
-import whatsappIcon from './../../assets/whatsapp-icon.svg';
+import linkedinIcon from "../../assets/linkedin-svgrepo-com.svg";
+import {Fragment, useEffect, useRef, useState} from "react";
+import whatsappIcon from "../../assets/whatsapp-icon.svg";
 import './style/style.css';
 
-export interface ButtonProps {
-    variation: 'primary' | 'secondary';
-}
-
-export default function GetInTouchButton({ variation }: ButtonProps) {
+export default function LetsTalkButton() {
     const [modalPosition, setModalPosition] = useState({ top: 0, left: 0 });
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const buttonRef = useRef<HTMLButtonElement>(null);
@@ -17,8 +13,8 @@ export default function GetInTouchButton({ variation }: ButtonProps) {
         if (buttonRef.current) {
             const rect = buttonRef.current.getBoundingClientRect();
             setModalPosition({
-                top: rect.top + window.scrollY,
-                left: rect.left + window.scrollX - 300
+                top: rect.top + window.scrollY +60,
+                left: rect.left + window.scrollX -70
             });
         }
         setIsOpen(true);
@@ -51,15 +47,14 @@ export default function GetInTouchButton({ variation }: ButtonProps) {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [isOpen]);
-
-    return (
+    return(
         <Fragment>
             <button
-                ref={buttonRef}
-                className={`${variation === 'primary' ? 'w-[180px] bg-white rounded-full p-4 hover:transition-colors hover:bg-amber-500 hover:text-white' : 'w-[200px] h-[60px] rounded-full border-white border-4 p-3 transition-colors hover:bg-white hover:text-black'}`}
+                className={'w-[120px] bg-white rounded-full text-black font-semibold p-2 font-baijamjuree'}
                 onClick={handleClick}
+                ref={buttonRef}
             >
-                GET IN TOUCH
+                Let's Talk
             </button>
             {isOpen && (
                 <div
@@ -87,5 +82,5 @@ export default function GetInTouchButton({ variation }: ButtonProps) {
                 </div>
             )}
         </Fragment>
-    );
+    )
 }
