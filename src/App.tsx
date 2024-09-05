@@ -5,6 +5,7 @@ import React, {useRef} from 'react';
 import MainPage from "./pages/main";
 import ErrorPage from "./pages/404";
 import './App.css';
+import GetInTouchPage from "./pages/get-in-touch-page";
 
 function App() {
     const homeRef = useRef<HTMLDivElement | null>(null);
@@ -28,6 +29,7 @@ function App() {
                 />
                 <Routes>
                     <Route path={'/'} element={<MainPage homeRef={homeRef} servicesRef={servicesRef} projectsRef={projectsRef} aboutMeRef={aboutMeRef}/>}/>
+                    <Route path={'/get-in-touch'} element={<GetInTouchPage/>}/>
                     <Route path={"*"} element={<ErrorPage/>}/>
                 </Routes>
                 <Footer/>

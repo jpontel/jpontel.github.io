@@ -37,6 +37,10 @@
     border-radius: 50%;
 }
 
+.styled-button-background-normal {
+    background: linear-gradient(90deg, #FFA84B 14.06%, #FF8A56 44.79%, #FF5E69 71.87%, #B16CEA 100%);
+}
+
 .styled-button-background:hover {
     background: linear-gradient(90deg, #FFA84B 14.06%, #FF8A56 44.79%, #FF5E69 71.87%, #B16CEA 100%);
 }
