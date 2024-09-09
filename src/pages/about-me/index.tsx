@@ -1,5 +1,6 @@
-import AboutMeSection from "../../components/aboutme-section";
 import GetInTouchButton from "../../components/get-in-touch-button";
+import AboutMeSection from "../../components/aboutme-section";
+import Carousel from "@/components/carousel";
 
 export default function AboutMe() {
     return (
@@ -21,14 +22,9 @@ export default function AboutMe() {
                 </div>
             </div>
             <div className={'flex flex-col w-full h-full items-center justify-center font-baijamjuree'}>
-                <div className={'flex gap-4 w-full items-center justify-center'}>
-                    <div className={'w-[474px] h-[306px] bg-white rounded-[20px] '}/>
-                    <div className={'w-[474px] h-[306px] bg-white rounded-[20px] '}/>
-                    <div className={'w-[474px] h-[306px] bg-white rounded-[20px] '}/>
-                </div>
+                <Carousel/>
                 <div className={'w-full h-full flex items-center justify-center mt-12 font-baijamjuree'}>
-                    <div
-                        className={'w-[865px] h-[400px] styled-background rounded-b-[50px] flex flex-col items-start font-baijamjuree font-bold text-center py-12'}>
+                    <div className={'w-full h-[400px] styled-background rounded-b-[50px] flex flex-col items-start font-baijamjuree font-bold text-center py-12'}>
                         <span className={'w-full h-full flex flex-col items-center justify-center text-[60px] text-white'}>Interested in working with me?</span>
                         <span className={'w-full h-full flex items-center justify-center'}>
                         <GetInTouchButton variation={'primary'}/>

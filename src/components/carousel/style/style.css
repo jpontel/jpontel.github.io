@@ -1,0 +1,17 @@
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 5));
+    }
+}
+
+.animated-scroll {
+    animation: scroll 10s linear infinite !important;
+    will-change: transform;
+}
+
+
+
+

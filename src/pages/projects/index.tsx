@@ -1,6 +1,8 @@
-import ProjectsBlock from "../../components/projects-block";
-import picture from './../../assets/prisoner.png';
+import ProjectsBlock from "@/components/projects-block";
+import picture from '@/assets/prisoner.png';
+import rectangle from  '@/assets/Rectangle 11.png';
 import './../home/style/style.css';
+import './style/style.css';
 
 export default function Projects() {
     return (
@@ -15,13 +17,24 @@ export default function Projects() {
                     explore new technologies and refine my skills! 😁
                 </div>
             </div>
-
-            <div className={'grid grid-cols-1 md:grid-cols-2 gap-12 gap-y-52'}>
-                <ProjectsBlock title={'Finance Landing Page'} description={'Landing Page UI Kit'} img={picture}/>
-                <ProjectsBlock title={'Interior Design Website'} description={'Dribbble Shot'} img={picture}/>
-                <ProjectsBlock title={'Russell Morgan Portfolio'} description={'Dribbble Shot'} img={picture}/>
-                <ProjectsBlock title={'Sonali Landing Page'} description={'Landing Page UI Kit'} img={picture}/>
+            <div className={'flex flex-col gap-6'}>
+                <div className={'flex gap-8'}>
+                    <ProjectsBlock title={'Finance Landing Page'} description={'Landing Page UI Kit'} img={picture}
+                                   size={'small'}/>
+                    <ProjectsBlock title={'Russell Morgan Portfolio'} description={'Dribbble Shot'} img={picture}
+                                   size={'small'}/>
+                </div>
+                <ProjectsBlock title={'Interiwor Design Website'} description={'Dribbble Shot'} img={rectangle}
+                               size={'large'} width={'w-full'}/>
+                <div className={'flex gap-8'}>
+                    <ProjectsBlock title={'Sonali Landing Page'} description={'Landing Page UI Kit'} img={picture}
+                                   size={'small'}/>
+                    <ProjectsBlock title={'Sonali Landing Page'} description={'Landing Page UI Kit'} img={picture}
+                                   size={'small'}/>
+                </div>
             </div>
         </div>
     )
 }
+
+
