@@ -1,15 +1,24 @@
 import linkedinIcon from '@/assets/linkedin-svgrepo-com.svg';
 import whatsappIcon from '@/assets/whatsapp-icon.svg';
+import {isMobile} from "@/util";
 
 export default function Footer() {
+    const mobile = isMobile();
+
     const redirectLink = (link: string) => {
         window.open(link, '_blank');
     };
+
+    const styles = {
+        'mobile':'flex flex-col gap-4',
+        'desktop':'flex'
+    }
+
     return (
-        <div className={'w-full h-full py-28 flex flex-col text-white lg:px-[250px] font-baijamjuree'}>
+        <div className={'w-full h-full py-28 flex flex-col text-white md:px-[250px] xsm:px-[20px] font-baijamjuree'}>
             <div className={'w-full bg-zinc-500 h-[1px] mb-12'}/>
-            <div className={'flex'}>
-                <div className={'w-full h-full flex flex-col gap-6'}>
+            <div className={mobile ? styles.mobile : styles.desktop}>
+                <div className={'w-full h-full flex flex-col xsm:gap-2 md:gap-6'}>
                     <div className={'font-baijamjuree font-bold text-4xl'}>
                         GUIGO
                     </div>
@@ -17,9 +26,9 @@ export default function Footer() {
                         © Made with ❤️‍🔥 by José Rodrigo Pontel
                     </div>
                 </div>
-                <div className={'w-full h-full items-end gap-3 justify-end text-end flex flex-col'}>
+                <div className={'w-full h-full xsm:items-start md:items-end gap-3 flex flex-col'}>
                     <p className={'text-[18px] font-semibold'}>Find me on Social media</p>
-                    <div className={'w-full h-full flex gap-4 items-end justify-end'}>
+                    <div className={'w-full h-full flex gap-4 xsm:justify-start md:justify-end'}>
                         <button
                             className={'w-[30px] h-[30px] rounded-full border border-white flex items-center justify-center'}
                             onClick={() => redirectLink('https://wa.me/554184974864')}
