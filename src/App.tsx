@@ -1,11 +1,11 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import GetInTouchPage from "./pages/get-in-touch-page";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import React, {useRef} from 'react';
 import MainPage from "./pages/main";
 import ErrorPage from "./pages/404";
 import './App.css';
-import GetInTouchPage from "./pages/get-in-touch-page";
 
 function App() {
     const servicesRef = useRef<HTMLDivElement | null>(null);

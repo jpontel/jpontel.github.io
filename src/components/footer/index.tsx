@@ -15,12 +15,12 @@ export default function Footer() {
     }
 
     return (
-        <div className={'w-full h-full py-28 flex flex-col text-white md:px-[250px] xsm:px-[20px] font-baijamjuree'}>
-            <div className={'w-full bg-zinc-500 h-[1px] mb-12'}/>
+        <div className={'w-full h-full xsm:py-8 md:py-28 flex flex-col text-white md:px-[250px] xsm:px-[20px] font-baijamjuree'}>
+            <div className={'w-full bg-zinc-500 h-[1px] xsm:mb-0 md:mb-12'}/>
             <div className={mobile ? styles.mobile : styles.desktop}>
                 <div className={'w-full h-full flex flex-col xsm:gap-2 md:gap-6'}>
                     <div className={'font-baijamjuree font-bold text-4xl'}>
-                        GUIGO
+                        JPONTEL
                     </div>
                     <div className={'w-full h-full text-[13px] text-zinc-400'}>
                         © Made with ❤️‍🔥 by José Rodrigo Pontel

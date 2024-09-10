@@ -11,7 +11,7 @@ export default function Home() {
             </div>
             <div
                 className={'text-white font-baijamjuree font-bold md:text-[55px] xsm:text-[40px] xsm:w-2/3 md:w-[60%] text-center'}>
-                <span className={'styled-text'}>Hello, I'm José,</span> creative software developer based in Brazil.
+                Hello! I'm<span className={'styled-text'}> José</span>, creative software developer based in Brazil.
             </div>
             <p className={'text-white lg:text-[18px] xsm:text-[15px] xsm:w-2/3 md:w-[50%] text-center leading-[35px] mt-6'}>
                 A Software Developer with a passion for creating and developing software that can help people in their

@@ -1,8 +1,8 @@
 import React, {Fragment} from "react";
-import Home from "../home";
 import Services from "../services";
 import Projects from "../projects";
 import AboutMe from "../about-me";
+import Home from "../home";
 
 interface MainPageProps {
     homeRef: React.RefObject<HTMLDivElement>;
