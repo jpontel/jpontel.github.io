@@ -47,13 +47,44 @@ const Navbar: React.FC<NavbarProps> = ({scrollToSection, homeRef, servicesRef, p
         };
     }, [isOpen]);
 
+    function navbarButtons() {
+        return (
+            <Fragment>
+                <button
+                    className={'transition-colors hover:text-orange-500'}
+                    onClick={() => scrollToSection(homeRef)}
+                >
+                    Home
+                </button>
+                <button
+                    className={'transition-colors hover:text-orange-500'}
+                    onClick={() => scrollToSection(servicesRef)}
+                >
+                    Services
+                </button>
+                <button
+                    className={'transition-colors hover:text-orange-500'}
+                    onClick={() => scrollToSection(projectsRef)}
+                >
+                    Projects
+                </button>
+                <button
+                    className={'transition-colors hover:text-orange-500'}
+                    onClick={() => scrollToSection(aboutMeRef)}
+                >
+                    About Me
+                </button>
+            </Fragment>
+        )
+    }
+
     return (
         <Fragment>
             <div
                 className={'w-full inline-flex p-4 text-white justify-between md:px-[250px] xsm:px-[30px] mt-2 font-baijamjuree '}>
                 <div className={'inline-flex justify-center text-center items-center gap-6 '}>
                     <button
-                        className={'font-bold text-xl mr-12'}
+                        className={'font-bold text-xl mr-12 '}
                         onClick={handleReturnMainPage}
                     >
                         JPONTEL
@@ -71,30 +102,7 @@ const Navbar: React.FC<NavbarProps> = ({scrollToSection, homeRef, servicesRef, p
                 ) : (
                     <div className={'justify-center inline-flex items-center'}>
                         <div className={'inline-flex justify-end text-end items-end gap-8 mr-8'}>
-                            <button
-                                className={'transition-colors hover:text-orange-500'}
-                                onClick={() => scrollToSection(homeRef)}
-                            >
-                                Home
-                            </button>
-                            <button
-                                className={'transition-colors hover:text-orange-500'}
-                                onClick={() => scrollToSection(servicesRef)}
-                            >
-                                Services
-                            </button>
-                            <button
-                                className={'transition-colors hover:text-orange-500'}
-                                onClick={() => scrollToSection(projectsRef)}
-                            >
-                                Projects
-                            </button>
-                            <button
-                                className={'transition-colors hover:text-orange-500'}
-                                onClick={() => scrollToSection(aboutMeRef)}
-                            >
-                                About Me
-                            </button>
+                            {navbarButtons()}
                         </div>
                         <LetsTalkButton/>
                     </div>
@@ -106,30 +114,7 @@ const Navbar: React.FC<NavbarProps> = ({scrollToSection, homeRef, servicesRef, p
                     ref={modalRef}
                 >
                     <h3 className={'font-bold w-full text-center'}>Menu</h3>
-                    <button
-                        className={'transition-colors hover:text-orange-500'}
-                        onClick={() => scrollToSection(homeRef)}
-                    >
-                        Home
-                    </button>
-                    <button
-                        className={'transition-colors hover:text-orange-500'}
-                        onClick={() => scrollToSection(servicesRef)}
-                    >
-                        Services
-                    </button>
-                    <button
-                        className={'transition-colors hover:text-orange-500'}
-                        onClick={() => scrollToSection(projectsRef)}
-                    >
-                        Projects
-                    </button>
-                    <button
-                        className={'transition-colors hover:text-orange-500'}
-                        onClick={() => scrollToSection(aboutMeRef)}
-                    >
-                        About Me
-                    </button>
+                    {navbarButtons()}
                 </div>
             )}
         </Fragment>
