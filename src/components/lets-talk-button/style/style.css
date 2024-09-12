@@ -35,3 +35,10 @@
     border-color: transparent transparent white transparent;
 }
 
+@media (max-width: 640px) {
+    .modal {
+        width: 190px;
+        padding: 16px;
+    }
+}
+

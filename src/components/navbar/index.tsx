@@ -1,6 +1,6 @@
+import React, {Fragment, useEffect, useRef, useState} from 'react';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import LetsTalkButton from "../lets-talk-button";
-import React, {Fragment, useEffect, useRef, useState} from 'react';
 import {useNavigate} from "react-router-dom";
 import {isMobile} from "@/util";
 
@@ -104,17 +104,20 @@ const Navbar: React.FC<NavbarProps> = ({scrollToSection, homeRef, servicesRef, p
                         <div className={'inline-flex justify-end text-end items-end gap-8 mr-8'}>
                             {navbarButtons()}
                         </div>
-                        <LetsTalkButton/>
+                        <LetsTalkButton variation={'primary'}/>
                     </div>
                 )}
             </div>
             {isOpen && (
                 <div
-                    className={'w-[150px] h-[190px] left-60 gap-2 p-3 bg-white rounded-lg border border-zinc-500 items-start justify-start flex flex-col font-baijamjuree absolute'}
+                    className={'w-[150px] h-[220px] left-52 gap-2 p-3 bg-white rounded-lg border border-zinc-500 items-start justify-start flex flex-col font-baijamjuree absolute'}
                     ref={modalRef}
                 >
                     <h3 className={'font-bold w-full text-center'}>Menu</h3>
                     {navbarButtons()}
+                    <div className={'w-full flex justify-center'}>
+                        <LetsTalkButton variation={'secondary'}/>
+                    </div>
                 </div>
             )}
         </Fragment>

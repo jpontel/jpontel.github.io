@@ -16,18 +16,18 @@ export default function Footer() {
 
     return (
         <div className={'w-full h-full xsm:py-8 md:py-28 flex flex-col text-white md:px-[250px] xsm:px-[20px] font-baijamjuree'}>
-            <div className={'w-full bg-zinc-500 h-[1px] xsm:mb-0 md:mb-12'}/>
+            <div className={'w-full bg-zinc-500 h-[1px] xsm:mb-6 md:mb-12'}/>
             <div className={mobile ? styles.mobile : styles.desktop}>
                 <div className={'w-full h-full flex flex-col xsm:gap-2 md:gap-6'}>
-                    <div className={'font-baijamjuree font-bold text-4xl'}>
+                    <div className={'font-baijamjuree font-bold xsm:text-2xl md:text-4xl'}>
                         JPONTEL
                     </div>
-                    <div className={'w-full h-full text-[13px] text-zinc-400'}>
+                    <div className={'w-full h-full xsm:text-[10px] md:text-[13px] text-zinc-400'}>
                         © Made with ❤️‍🔥 by José Rodrigo Pontel
                     </div>
                 </div>
                 <div className={'w-full h-full xsm:items-start md:items-end gap-3 flex flex-col'}>
-                    <p className={'text-[18px] font-semibold'}>Find me on Social media</p>
+                    <p className={'xsm:text-[13px] md:text-[18px] font-semibold'}>Find me on Social media</p>
                     <div className={'w-full h-full flex gap-4 xsm:justify-start md:justify-end'}>
                         <button
                             className={'w-[30px] h-[30px] rounded-full border border-white flex items-center justify-center'}

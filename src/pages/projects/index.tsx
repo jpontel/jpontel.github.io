@@ -21,7 +21,7 @@ export default function Projects() {
                 </div>
             </div>
             {mobile ? (
-                <div>oeee</div>
+                <div></div>
             ) : (
                 <div className={'flex flex-col gap-6'}>
                     <div className={'flex gap-8'}>

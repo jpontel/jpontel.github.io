@@ -1,20 +1,32 @@
 import linkedinIcon from "../../assets/linkedin-svgrepo-com.svg";
+import {ButtonProps} from "@/components/get-in-touch-button";
 import {Fragment, useEffect, useRef, useState} from "react";
 import whatsappIcon from "../../assets/whatsapp-icon.svg";
 import './style/style.css';
 
-export default function LetsTalkButton() {
+const style = {
+    'primary':'w-[120px] bg-white rounded-full text-black font-semibold p-2 font-baijamjuree',
+    'secondary':'w-full bg-black rounded-lg text-[10px] text-white font-semibold p-1 font-baijamjuree',
+};
+
+export default function LetsTalkButton({variation}:ButtonProps) {
     const [modalPosition, setModalPosition] = useState({ top: 0, left: 0 });
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const buttonRef = useRef<HTMLButtonElement>(null);
     const modalRef = useRef<HTMLDivElement>(null);
 
     const handleClick = () => {
-        if (buttonRef.current) {
+        if (buttonRef.current && variation === 'primary') {
             const rect = buttonRef.current.getBoundingClientRect();
             setModalPosition({
                 top: rect.top + window.scrollY +60,
                 left: rect.left + window.scrollX -70
+            });
+        } else if (buttonRef.current && variation === 'secondary') {
+            const rect = buttonRef.current.getBoundingClientRect();
+            setModalPosition({
+                top: rect.top + window.scrollY,
+                left: rect.left + window.scrollX - 300
             });
         }
         setIsOpen(true);
@@ -47,10 +59,11 @@ export default function LetsTalkButton() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [isOpen]);
+
     return(
         <Fragment>
             <button
-                className={'w-[120px] bg-white rounded-full text-black font-semibold p-2 font-baijamjuree'}
+                className={variation === 'primary' ? style.primary : style.secondary}
                 onClick={handleClick}
                 ref={buttonRef}
             >
@@ -62,9 +75,9 @@ export default function LetsTalkButton() {
                     style={{ position: 'absolute', top: modalPosition.top, left: modalPosition.left }}
                     className={'modal animation-grow flex-col'}
                 >
-                    <p className={'text-black text-[20px] font-bold text-center'}>Contact me</p>
-                    <p className={'text-black text-[14px]'}><span className={'font-bold'}>Email:</span> jpontel2002@gmail.com</p>
-                    <p className={'text-black text-[14px]'}><span className={'font-bold'}>Phone Number:</span> (41)98497-4864</p>
+                    <p className={'text-black xsm:text-[15px] md:text-[20px] font-bold text-center'}>Contact me</p>
+                    <p className={'text-black xsm:text-[10px] md:text-[14px]'}><span className={'font-bold'}>Email:</span> jpontel2002@gmail.com</p>
+                    <p className={'text-black xsm:text-[10px] md:text-[14px]'}><span className={'font-bold'}>Phone Number:</span> (41)98497-4864</p>
                     <div className={'inline-flex w-full gap-3'}>
                         <button
                             className={'w-[25px] h-[25px] border border-black rounded-full items-center justify-center flex'}
