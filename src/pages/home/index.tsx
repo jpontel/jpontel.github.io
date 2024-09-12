@@ -16,7 +16,7 @@ export default function Home() {
                 A Software Developer with a passion for creating and developing software that can help people in their
                 daily lives. Responsive Design, Web and Mobile development
             </p>
-            <div className={'flex w-full items-center xsm:px-[15%] md:flex xsm:flex-col gap-8 justify-center mt-8 md:pb-28 xsm:pb-10'}>
+            <div className="w-full flex flex-col items-center gap-8 justify-center xsm:px-[15%] mt-8 pb-10 md:flex-row md:pb-28">
                 <GetInTouchButton variation={'primary'}/>
                 <ViewAllWorksButton variation={'primary'}/>
             </div>
