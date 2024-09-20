@@ -1,9 +1,9 @@
 import ProjectsBlock from "@/components/projects-block";
-import picture from '@/assets/prisoner.png';
 import rectangle from  '@/assets/Rectangle 11.png';
+import picture from '@/assets/prisoner.png';
 import './../home/style/style.css';
-import './style/style.css';
 import {isMobile} from "@/util";
+import './style/style.css';
 
 export default function Projects() {
     const mobile = isMobile();
