@@ -17,9 +17,9 @@ export default function Services() {
             </div>
             <div className={'flex-col mt-12'}>
                 <ServiceSection text={'UI/UX Development'} borderTop={true} link={'https://www.behance.net/joseropontel/'}/>
-                <ServiceSection text={'Web Development'} borderTop={true} link={'https://github.com/jpontel'}/>
-                <ServiceSection text={'Mobile Development'} borderTop={true} link={'https://github.com/jpontel'}/>
-                <ServiceSection text={'Machine Learning'} borderTop={false} link={'https://github.com/jpontel'}/>
+                <ServiceSection text={'Web Development'} borderTop={true} link={'https://github.com/stars/jpontel/lists/web-apps'}/>
+                <ServiceSection text={'Mobile Development'} borderTop={true} link={'https://github.com/stars/jpontel/lists/mobile-apps'}/>
+                <ServiceSection text={'Machine Learning'} borderTop={false} link={'https://github.com/stars/jpontel/lists/machine-learning'}/>
             </div>
         </div>
     )

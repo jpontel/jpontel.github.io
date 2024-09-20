@@ -1,7 +1,7 @@
-import profile from './../../assets/img.png';
-import './style/style.css';
 import GetInTouchButton from "../../components/get-in-touch-button";
 import ViewAllWorksButton from "../../components/view-all-works-button";
+import profile from './../../assets/img.png';
+import './style/style.css';
 
 export default function Home() {
     return (
