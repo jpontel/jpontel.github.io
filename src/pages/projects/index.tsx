@@ -1,5 +1,6 @@
 import ProjectsBlock from "@/components/projects-block";
-import rectangle from  '@/assets/Rectangle 11.png';
+import weatherApp from '@/assets/weatherapp.png';
+import aguadoce from  '@/assets/aguadoce-mockup.png';
 import picture from '@/assets/prisoner.png';
 import './../home/style/style.css';
 import {isMobile} from "@/util";
@@ -25,12 +26,12 @@ export default function Projects() {
             ) : (
                 <div className={'flex flex-col gap-6'}>
                     <div className={'flex gap-8'}>
-                        <ProjectsBlock title={'Weather App'} description={'Mobile App created using Swift for weather prediction using AccuWeather API'} img={picture}
+                        <ProjectsBlock title={'Weather App'} description={'Mobile App created using Swift for weather prediction using AccuWeather API'} img={weatherApp}
                                        size={'small'} width={'w-full'}/>
                         <ProjectsBlock title={'Vegan Recipes'} description={'Mobile App created using Flutter to bring easily vegan recipes for users.'} img={picture}
                                        size={'small'} width={'w-full'}/>
                     </div>
-                    <ProjectsBlock title={'E-Commerce Webstore'} description={'Clothing webstore made with React Typescript'} img={rectangle}
+                    <ProjectsBlock title={'E-Commerce Webstore'} description={'Clothing webstore made with React Typescript'} img={aguadoce}
                                    size={'large'} width={'w-full'}/>
                     <div className={'flex gap-8'}>
                         <ProjectsBlock title={'Landing Page Design'} description={'Landing Page designed using Figma'} img={picture}
