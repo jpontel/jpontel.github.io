@@ -1,6 +1,6 @@
 import ProjectsBlock from "@/components/projects-block";
-import weatherApp from '@/assets/weatherapp.png';
-import aguadoce from  '@/assets/aguadoce-mockup.png';
+import weatherApp from '@/assets/weatherapp-mockup.png';
+import aguadoce from  '@/assets/aguadoce-png.png';
 import picture from '@/assets/prisoner.png';
 import './../home/style/style.css';
 import {isMobile} from "@/util";
