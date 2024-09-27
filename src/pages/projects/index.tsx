@@ -1,3 +1,4 @@
+import mockupLandingPage from '@/assets/mockup_landing_page.png';
 import ProjectsBlock from "@/components/projects-block";
 import weatherApp from '@/assets/weatherapp-mockup.png';
 import aguadoce from '@/assets/aguadoce-png.png';
@@ -59,7 +60,7 @@ export default function Projects() {
                                    size={'large'} width={'w-full'}/>
                     <div className={'flex gap-8'}>
                         <ProjectsBlock title={'Landing Page Design'} description={'Landing Page designed using Figma'}
-                                       img={picture}
+                                       img={mockupLandingPage}
                                        size={'small'} width={'w-full'}/>
                         <ProjectsBlock title={'Chatbot'}
                                        description={'ChatBot developed using NLP algorithm and NLTK Tools'}
