@@ -1,8 +1,9 @@
-import mockupLandingPage from '@/assets/mockup_landing_page.png';
+import mockupLandingPage from '@/assets/mockup-degrade/landingpage-mockup-degrade.png';
 import ProjectsBlock from "@/components/projects-block";
-import weatherApp from '@/assets/weatherapp-mockup.png';
-import aguadoce from '@/assets/aguadoce-png.png';
-import picture from '@/assets/prisoner.png';
+import weatherAppMockup from '@/assets/mockup-degrade/weather-mockup-degrade.png';
+import veganMockup from '@/assets/mockup-degrade/vegan-mockup-degrade.png';
+import chatbotMockup from '@/assets/mockup-degrade/chatbot-mockup-degrade.png';
+import aguadoceMockup from '@/assets/mockup-degrade/aguadoce-mockup-degrade.png';
 import './../home/style/style.css';
 import {isMobile} from "@/util";
 import './style/style.css';
@@ -27,20 +28,20 @@ export default function Projects() {
                 <div className={'flex flex-col w-full h-full gap-8'}>
                     <ProjectsBlock title={'Weather App'}
                                    description={'Mobile App created using Swift for weather prediction using AccuWeather API'}
-                                   img={weatherApp}
+                                   img={weatherAppMockup}
                                    size={'small'} width={'w-full'}/>
                     <ProjectsBlock title={'Vegan Recipes'}
                                    description={'Mobile App created using Flutter to bring easily vegan recipes for users.'}
-                                   img={picture}
+                                   img={veganMockup}
                                    size={'small'} width={'w-full'}/>
                     <ProjectsBlock title={'E-Commerce Webstore'}
-                                   description={'Clothing webstore made with React Typescript'} img={aguadoce}
+                                   description={'Clothing webstore made with React Typescript'} img={aguadoceMockup}
                                    size={'large'} width={'w-full'}/>
                     <ProjectsBlock title={'Landing Page Design'} description={'Landing Page designed using Figma'}
-                                   img={picture}
+                                   img={mockupLandingPage}
                                    size={'small'} width={'w-full'}/>
                     <ProjectsBlock title={'Chatbot'}
-                                   description={'ChatBot developed using NLP algorithm and NLTK Tools'} img={picture}
+                                   description={'ChatBot developed using NLP algorithm and NLTK Tools'} img={chatbotMockup}
                                    size={'small'} width={'w-full'}/>
                 </div>
             ) : (
@@ -48,15 +49,15 @@ export default function Projects() {
                     <div className={'flex gap-8'}>
                         <ProjectsBlock title={'Weather App'}
                                        description={'Mobile App created using Swift for weather prediction using AccuWeather API'}
-                                       img={weatherApp}
+                                       img={weatherAppMockup}
                                        size={'small'} width={'w-full'}/>
                         <ProjectsBlock title={'Vegan Recipes'}
                                        description={'Mobile App created using Flutter to bring easily vegan recipes for users.'}
-                                       img={picture}
+                                       img={veganMockup}
                                        size={'small'} width={'w-full'}/>
                     </div>
                     <ProjectsBlock title={'E-Commerce Webstore'}
-                                   description={'Clothing webstore made with React Typescript'} img={aguadoce}
+                                   description={'Clothing webstore made with React Typescript'} img={aguadoceMockup}
                                    size={'large'} width={'w-full'}/>
                     <div className={'flex gap-8'}>
                         <ProjectsBlock title={'Landing Page Design'} description={'Landing Page designed using Figma'}
@@ -64,7 +65,7 @@ export default function Projects() {
                                        size={'small'} width={'w-full'}/>
                         <ProjectsBlock title={'Chatbot'}
                                        description={'ChatBot developed using NLP algorithm and NLTK Tools'}
-                                       img={picture}
+                                       img={chatbotMockup}
                                        size={'small'} width={'w-full'}/>
                     </div>
                 </div>

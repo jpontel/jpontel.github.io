@@ -1,6 +1,5 @@
 import GetInTouchButton from "../../components/get-in-touch-button";
 import AboutMeSection from "../../components/aboutme-section";
-import Carousel from "@/components/carousel";
 
 export default function AboutMe() {
     return (
@@ -12,7 +11,7 @@ export default function AboutMe() {
                         José Rodrigo Pontel
                     </div>
                     <div
-                        className={'text-left xsm:text-[15px] leading-8 md:text-[18px] xsm:w-full md:w-2/3 text-white'}>
+                        className={'text-left xsm:text-[15px] leading-8 md:text-[18px] xsm:w-full md:w-[80%] text-white'}>
                         I am looking to join a cross-functional team where I can leverage my skills in front-end and
                         back-end development, UI/UX design, and machine learning to create impactful and accessible
                         digital experiences.
@@ -24,7 +23,7 @@ export default function AboutMe() {
                 </div>
             </div>
             <div className={'flex flex-col w-full h-full items-center justify-center font-baijamjuree'}>
-                <Carousel/>
+                {/*<Carousel/>*/}
                 <div className={'w-full h-full flex items-center justify-center mt-12 font-baijamjuree'}>
                     <div
                         className={'w-full h-[400px] styled-background rounded-b-[50px] flex flex-col items-start font-baijamjuree font-bold text-center py-12'}>
