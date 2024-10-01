@@ -13,7 +13,7 @@ interface GenericInputProps {
 const LabeledInput: React.FC<GenericInputProps> = ({value, label, placeholder, type, isText, onChange, name}) => {
     return (
         <div className={'flex flex-col mb-4'}>
-            <label className={'text-white mb-2 font-semibold'}>{label}</label>
+            <label className={'text-white mb-2 font-semibold xsm:text-[12px] md:text-[15px]'}>{label}</label>
             {isText ? (
                 <textarea
                     placeholder={placeholder ? placeholder : 'Type Here...'}

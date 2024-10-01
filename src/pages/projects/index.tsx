@@ -1,9 +1,9 @@
 import mockupLandingPage from '@/assets/mockup-degrade/landingpage-mockup-degrade.png';
-import ProjectsBlock from "@/components/projects-block";
 import weatherAppMockup from '@/assets/mockup-degrade/weather-mockup-degrade.png';
-import veganMockup from '@/assets/mockup-degrade/vegan-mockup-degrade.png';
-import chatbotMockup from '@/assets/mockup-degrade/chatbot-mockup-degrade.png';
 import aguadoceMockup from '@/assets/mockup-degrade/aguadoce-mockup-degrade.png';
+import chatbotMockup from '@/assets/mockup-degrade/chatbot-mockup-degrade.png';
+import veganMockup from '@/assets/mockup-degrade/vegan-mockup-degrade.png';
+import ProjectsBlock from "@/components/projects-block";
 import './../home/style/style.css';
 import {isMobile} from "@/util";
 import './style/style.css';
@@ -14,8 +14,7 @@ export default function Projects() {
     return (
         <div className={'mb-32 xsm:px-[20px] md:p-32 pt-32 flex flex-col gap-20 md:px-[250px]'}>
             <div className={'text-white justify-start items-start flex flex-col'}>
-                <div
-                    className={'font-baijamjuree xsm:text-[30px] md:text-[50px] font-bold xsm:w-full md:w-[350px] mb-[35px]'}>
+                <div className={'font-baijamjuree xsm:text-[30px] md:text-[50px] font-bold xsm:w-full md:w-[350px] mb-[35px]'}>
                     What I've been <span className={'styled-text'}>working on?</span>
                 </div>
                 <div className={'text-left xsm:text-[15px] leading-8 md:text-[18px] xsm:w-full md:w-2/3'}>
@@ -70,7 +69,6 @@ export default function Projects() {
                     </div>
                 </div>
             )}
-
         </div>
     )
 }

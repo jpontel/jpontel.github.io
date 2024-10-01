@@ -5,7 +5,7 @@ interface SubmitButtonProps {
 export default function SubmitButton({handleClick}: SubmitButtonProps) {
     return(
         <button
-            className={'w-[180px] rounded-full p-4 styled-button-background-normal font-baijamjuree font-semibold mt-2'}
+            className={'xsm:w-[130px] md:w-[180px] md:text-[15px] xsm:text-[13px] rounded-full p-4 styled-button-background-normal font-baijamjuree font-semibold mt-2'}
             onClick={handleClick}
         >
             Submit Now
