@@ -55,7 +55,7 @@ export default function GetInTouchPage() {
             message: formData.message
         };
         try {
-            const response = await fetch('http://3.145.116.102:8080/portfolio/contact/submit', {
+            const response = await fetch('http://3.145.116.102:8081/portfolio/contact/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
