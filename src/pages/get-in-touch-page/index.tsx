@@ -55,7 +55,7 @@ export default function GetInTouchPage() {
             message: formData.message
         };
         try {
-            const response = await fetch('https://338a-2804-14c-87d5-7391-6838-3795-dc7c-cdf3.ngrok-free.app/portfolio/contact/submit', {
+            const response = await fetch('https://c23c-2804-14c-87d5-7391-6838-3795-dc7c-cdf3.ngrok-free.app/portfolio/contact/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
